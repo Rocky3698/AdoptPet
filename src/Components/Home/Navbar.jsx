@@ -69,10 +69,10 @@ const Navbar = () => {
                         <figure><img className='w-10 rounded-lg' src="/logo.png" alt="" /></figure>
                         FurEver Home
                     </Link>
-                    <div className="dropdown dropdown-left">
+                    <div className="dropdown dropdown-left md:hidden">
                         <div tabIndex={0} role="button" className=" m-1"><FaBars></FaBars></div>
                         <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-28">
-                        {NavLinks}
+                            {NavLinks}
                         </ul>
                     </div>
                 </div>
