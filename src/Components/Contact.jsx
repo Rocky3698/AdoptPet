@@ -4,7 +4,7 @@ const Contact = () => {
     return (
         <div id="contact" className="mt-12 mb-5 pb-4">
             <Icon></Icon>
-            <section className="w-5/6 mx-auto  rounded-lg shadow-md p-5">
+            <section className="w-5/6 mx-auto  rounded-lg shadow-md p-5 pt-0">
                 <h2 className="text-3xl font-bold mb-6 text-gray-700 text-center">Contact Us</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
