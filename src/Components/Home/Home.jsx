@@ -6,6 +6,7 @@ import Icon from './Icon';
 import Pricing from './Pricing';
 import Reviews from './Reviews';
 import Footer from './Footer';
+import Contact from '../Contact';
 
 const Home = () => {
     return (
@@ -17,6 +18,8 @@ const Home = () => {
             <Icon></Icon>
             <Pricing></Pricing>
             <Reviews></Reviews>
+            
+            <Contact></Contact>
             <Footer></Footer>
         </div>
     );
