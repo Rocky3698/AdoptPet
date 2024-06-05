@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import { LuLogIn } from "react-icons/lu";
-import { FaSignInAlt } from "react-icons/fa";
+import { FaSignInAlt, FaBars } from "react-icons/fa";
 import { Link as ScrollLink } from 'react-scroll';
 const Navbar = () => {
 
@@ -46,7 +46,19 @@ const Navbar = () => {
             </ScrollLink>
         </li>
         <li><NavLink className={({ isActive }) => isActive ? 'underline underline-offset-8 font-semibold text-dark pb-3' : 'text-dark font-semibold hover:text-blue-500'} to="/shelters">About Us</NavLink></li>
-        <li><NavLink className={({ isActive }) => isActive ? 'underline underline-offset-8 font-semibold text-dark pb-3' : 'text-dark font-semibold hover:text-orange-300'} to="/reviews">Contact</NavLink></li>
+        <li>
+            <ScrollLink
+                activeClass="underline underline-offset-8 font-semibold text-dark pb-3"
+                className="text-dark font-semibold hover:opacity-65 cursor-pointer"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+            >
+                Contact
+            </ScrollLink>
+        </li>
     </>;
 
     return (
@@ -57,6 +69,12 @@ const Navbar = () => {
                         <figure><img className='w-10 rounded-lg' src="/logo.png" alt="" /></figure>
                         FurEver Home
                     </Link>
+                    <div className="dropdown dropdown-left">
+                        <div tabIndex={0} role="button" className=" m-1"><FaBars></FaBars></div>
+                        <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-28">
+                        {NavLinks}
+                        </ul>
+                    </div>
                 </div>
                 <div className='md:block hidden'>
                     {

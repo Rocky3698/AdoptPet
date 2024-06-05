@@ -2,7 +2,7 @@
 import Icon from "./Home/Icon";
 const Contact = () => {
     return (
-        <div className="mt-12 mb-5 pb-4">
+        <div id="contact" className="mt-12 mb-5 pb-4">
             <Icon></Icon>
             <section className="w-5/6 mx-auto  rounded-lg shadow-md p-5">
                 <h2 className="text-3xl font-bold mb-6 text-gray-700 text-center">Contact Us</h2>
