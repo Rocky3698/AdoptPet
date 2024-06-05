@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { LuLogIn } from "react-icons/lu";
 import { FaSignInAlt, FaBars } from "react-icons/fa";
 import { Link as ScrollLink } from 'react-scroll';
@@ -45,7 +45,6 @@ const Navbar = () => {
                 Pricing
             </ScrollLink>
         </li>
-        <li><NavLink className={({ isActive }) => isActive ? 'underline underline-offset-8 font-semibold text-dark pb-3' : 'text-dark font-semibold hover:text-blue-500'} to="/shelters">About Us</NavLink></li>
         <li>
             <ScrollLink
                 activeClass="underline underline-offset-8 font-semibold text-dark pb-3"
@@ -57,6 +56,19 @@ const Navbar = () => {
                 duration={500}
             >
                 Contact
+            </ScrollLink>
+        </li>
+        <li>
+            <ScrollLink
+                activeClass="underline underline-offset-8 font-semibold text-dark pb-3"
+                className="text-dark font-semibold hover:opacity-65 cursor-pointer"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+            >
+                About Us
             </ScrollLink>
         </li>
     </>;

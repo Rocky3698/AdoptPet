@@ -2,8 +2,8 @@ import { IoIosArrowForward } from "react-icons/io";
 const Pricing = () => {
     return (
         <div id="pricing" className="w-5/6 mx-auto pb-5 text-center">
-            <h2 className="text-5xl text-black font-semibold">Choose a Plan</h2>
-            <h2 className="text-xl opacity-80 mb-10">Select the best plan according to your needs</h2>
+            <h2 className="text-3xl text-black font-semibold">Choose a Plan</h2>
+            <h2 className="font-mono text-sm italic mb-10">Select the best plan according to your needs</h2>
             <div className="flex flex-wrap gap-12 items-center justify-evenly ">
                 <div className="text-center h-96 w-80 border p-3 space-y-2 rounded-lg shadow-lg">
                     <h1 className="text-4xl font-bold text-dark">Basics</h1>

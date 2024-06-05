@@ -4,7 +4,8 @@ const Reviews = () => {
         <div id="review" className=" mt-10 bg-slate-100 p-5 pb-10">
             <Icon></Icon>
             <div className="w-5/6 mx-auto text-center">
-            <h1 className="text-4xl text-black my-7">What Adopters says about ForEverHome</h1>
+            <h1 className="text-3xl text-black font-semibold mt-7">What Adopters says about ForEverHome</h1>
+            <h2 className='font-mono text-sm italic mb-7'>we believe every animal deserves a loving home</h2>
             <div className="flex flex-wrap gap-5 justify-evenly items-center">
                 <div className="w-80 text-center border border-black rounded-lg p-3">
                     <div className="avatar flex-col justify-center items-center">

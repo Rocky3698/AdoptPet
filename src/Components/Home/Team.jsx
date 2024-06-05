@@ -1,5 +1,5 @@
 import { FaYoutube, FaFacebook, FaLinkedin } from "react-icons/fa";
-import Icon from './Home/Icon';
+import Icon from './Icon';
 const Team = () => {
     return (
         <div className="w-5/6 mx-auto text-center">

@@ -1,5 +1,5 @@
 
-import Icon from "./Home/Icon";
+import Icon from "./Icon";
 const Contact = () => {
     return (
         <div id="contact" className="mt-12 mb-5 pb-4">
